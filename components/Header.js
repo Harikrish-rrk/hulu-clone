@@ -5,11 +5,7 @@ import {
     CheckBadgeIcon,
     BoltIcon,
     FolderOpenIcon,
-
-
-
-}
-    from '@heroicons/react/24/outline'
+} from '@heroicons/react/24/outline'
 import React from 'react'
 import Headeritems from './Headeritems'
 function Header() {
@@ -18,15 +14,13 @@ function Header() {
             <div className='sm:flex justify-between w-full p-2'>
 
                 {/* header items */}
-                <div className='flex justify-between sm:space-x-10'>
+                <div className='flex justify-between'>
                     <Headeritems title="Home" Icon={HomeIcon} />
                     <Headeritems title="Search" Icon={MagnifyingGlassIcon} />
                     <Headeritems title="Verified" Icon={CheckBadgeIcon} />
                     <Headeritems title="Trending" Icon={BoltIcon} />
-                    <Headeritems title="User" Icon={FolderOpenIcon} />
-
-
-
+                    <Headeritems title="Collections" Icon={FolderOpenIcon} />
+                    <Headeritems title="Accounts" Icon={UserIcon} />
                 </div>
 
                 {/* hulu logo */}
